@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="inputAge(parseInt(prompt('mời bạn nhập vào số học sinh cần xác nhận tuổi')))">
+<script>
+    function inputAge(x) {
+        for (i=0; i<x; i++) {
+            y = prompt('mời bạn nhập vào tuổi học sinh cần xác nhận')
+            if (y<14) {
+                document.write('Học sinh thứ ' + (i+1) + ' không đủ điều kiện'+'<br>');
+            }else {
+                document.write('Học sinh thứ ' + (i+1) + ' đủ điều kiện'+'<br>');
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

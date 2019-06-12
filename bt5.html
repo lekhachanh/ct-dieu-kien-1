@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = parseFloat(prompt('nhập vào điểm bài kiểm tra 1 tiêt:'));
+    let y = parseFloat(prompt('nhập vào điểm bài kiểm tra giữa kỳ:'));
+    let z = parseFloat(prompt('nhập vào điểm bài kiểm tra cuối kỳ:'));
+    let DTB = (x+y*3+z*6)/10;
+    if (DTB>=8.5) {
+        document.write('Loại Giỏi');
+    }else if (8.5>DTB && DTB>=6.5) {
+        document.write('Loại khá');
+    }else if (6.5>DTB && DTB>=4) {
+        document.write('Loại trung bình');
+    }else {
+        document.write('Loại yếu');
+    }
+</script>
+
+</body>
+</html>
